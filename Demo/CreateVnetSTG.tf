@@ -50,7 +50,7 @@ resource "azurerm_storage_account" "lab01" {
     project      = "MS Lab Readiness"
   }
 }
-
+##
 /*
 # Create STG Account 02
 resource "azurerm_storage_account" "lab02" {
