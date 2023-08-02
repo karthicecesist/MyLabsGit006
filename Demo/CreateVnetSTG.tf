@@ -51,6 +51,7 @@ resource "azurerm_storage_account" "lab01" {
   }
 }
 
+/*
 # Create STG Account 02
 resource "azurerm_storage_account" "lab02" {
   name                     = "mystglabtf02"
@@ -66,3 +67,4 @@ resource "azurerm_storage_account" "lab02" {
     project      = "MS Lab Readiness"
   }
 }
+*/
