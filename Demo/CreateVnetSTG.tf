@@ -51,4 +51,18 @@ resource "azurerm_storage_account" "lab01" {
   }
 }
 
+# Create STG Account 02
+resource "azurerm_storage_account" "lab02" {
+  name                     = "mystglabtf02"
+  resource_group_name = "mydevtf001-rg"
+  location                 = "East US"
+  account_tier             = "Standard"
+  account_replication_type = "LRS"
 
+  tags = {
+    Environment  = "QC"
+    "Created By" = "Admin"
+    Model        = "Pipeline Test"
+    project      = "MS Lab Readiness"
+  }
+}
